@@ -1,12 +1,8 @@
 package com.workintech.sqldmlprocedures.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
 @Entity
 @Table(name = "ogrenci")
@@ -18,7 +14,6 @@ public class Ogrenci {
     private String soyad;
     private String cinsiyet;
     private String sinif;
-    private int puan;
-    @Column(nullable = true)
+    private Integer puan;
     private String dtarih;
 }
